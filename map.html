@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>地图</title>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/raphael.js"></script>
+    <script src="js/chinamapPath.js"></script>
+    <script src="js/chinamap.js"></script>
+    <style type="text/css">
+        #tiplayer {
+            padding-right: 5px;
+            padding-left: 5px;
+            z-index: 1000;
+            min-height: 1em;
+            background: #000;
+            max-width: 250px;
+            padding-bottom: 5px;
+            font: 12px 'Microsoft YaHei',Arial,ËÎÌå,Tahoma,Sans-Serif;
+            color: #fff;
+            padding-top: 5px;
+            position: absolute;
+            text-align: left;
+            word-wrap: break-word;
+            -moz-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .ToolTip {
+            padding-right: 5px;
+            padding-left: 5px;
+            z-index: 1000;
+            min-height: 1em;
+            background: #000;
+            max-width: 350px;
+            padding-bottom: 5px;
+            font: 12px 'Microsoft YaHei',Arial,ËÎÌå,Tahoma,Sans-Serif;
+            color: #fff;
+            padding-top: 5px;
+            position: absolute;
+            text-align: left;
+            word-wrap: break-word;
+            -moz-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .ToolTip {
+            border-right: #c5b270 1px solid;
+            padding-right: 15px;
+            border-top: #c5b270 1px solid;
+            padding-left: 15px;
+            background: #fffbd6;
+            padding-bottom: 0px;
+            border-left: #c5b270 1px solid;
+            color: #bb861c;
+            line-height: 30px;
+            padding-top: 0px;
+            border-bottom: #c5b270 1px solid;
+            top: 30px;
+        }
+        #map{
+
+            cursor: pointer;
+            margin-right: auto;
+            margin-left: auto;
+            width: 650px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="ChinaMap">
+        <form action="">
+            <select name="" id="select-city">
+                <option value="选择城市">选择城市...</option>
+                <option value="澳门">澳门</option>
+                <option value="香港">香港</option>
+                <option value="台湾">台湾</option>
+                <option value="广东">广东</option>
+                <option value="广西">广西</option>
+                <option value="海南">海南</option>
+                <option value="云南">云南</option>
+                <option value="福建">福建</option>
+                <option value="江西">江西</option>
+                <option value="湖南">湖南</option>
+                <option value="贵州">贵州</option>
+                <option value="浙江">浙江</option>
+                <option value="安徽">安徽</option>
+                <option value="上海">上海</option>
+                <option value="江苏">江苏</option>
+                <option value="湖北">湖北</option>
+                <option value="西藏">西藏</option>
+                <option value="青海">青海</option>
+                <option value="甘肃">甘肃</option>
+                <option value="新疆">新疆</option>
+                <option value="陕西">陕西</option>
+                <option value="河南">河南</option>
+                <option value="山西">山西</option>
+                <option value="山东">山东</option>
+                <option value="河北">河北</option>
+                <option value="天津">天津</option>
+                <option value="北京">北京</option>
+                <option value="宁夏">宁夏</option>
+                <option value="内蒙古">内蒙古</option>
+                <option value="辽宁">辽宁</option>
+                <option value="吉林">吉林</option>
+                <option value="黑龙江">黑龙江</option>
+                <option value="重庆">重庆</option>
+                <option value="四川">四川</option>
+            </select>
+        </form>
+        <div id="map"></div>
+
+    </div>
+</body>
+</html>
