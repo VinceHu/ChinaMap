@@ -19,12 +19,6 @@ function Map() {
         "cursor": "pointer"
     };
 
-    var textAttr2 = {
-        "fill": "#000",
-        "font-size": "12px",
-        "cursor": "pointer"
-    };
-
     //调用绘制地图方法
     paintMap(R);
 
@@ -161,12 +155,8 @@ function Map() {
                     stroke: "#e6dddd"
                 }, 2000, "elastic");
 
-                //china[checkText]['text'] = R.text(xx, yy, china[checkText]['name']).attr(textAttr2)
-
                 if (china[current] === undefined) return;
             })
-
-
 
         })
 
